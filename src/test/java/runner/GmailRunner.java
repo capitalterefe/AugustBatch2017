@@ -3,13 +3,13 @@ package runner;
 import org.common.Utility;
 import org.testng.annotations.Test;
 
-import com.google.GmailApp;
+import com.google.GoogleLandingPage;
 
 public class GmailRunner extends Utility {
-	GmailApp gmailApp = new GmailApp();
+	GoogleLandingPage gmailApp = new GoogleLandingPage();
 
 	@Test
 	public void testRegistration() {
-		gmailApp.searchForKeyword();
+		gmailApp.clickGmailLinkText();
 	}
 }

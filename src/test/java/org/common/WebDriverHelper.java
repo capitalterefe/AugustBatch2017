@@ -21,7 +21,9 @@ public class WebDriverHelper {
 
 		if (config.getBrowser().equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-		} else if (config.getBrowser().equalsIgnoreCase("chrome")) {
+		} 
+		
+		else if (config.getBrowser().equalsIgnoreCase("chrome")) {
 
 			if (config.getOperatingSystem().equalsIgnoreCase("windows")) {
 				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -35,7 +37,7 @@ public class WebDriverHelper {
 			driver = new InternetExplorerDriver();
 
 		} else {
-			System.out.println(config.getBrowser());
+			System.out.println("Please Provide a valid browser Name "+config.getBrowser()+" Is not a valid Browser Name");
 		}
 
 		driver.get(config.getBaseUrl());
