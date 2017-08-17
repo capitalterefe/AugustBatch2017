@@ -16,5 +16,10 @@ public class GcrShopRunner extends Utility{
 		gcrShopLandingPage.signIn();
 		gcrShopHomePage.verifyHomePage();
 	}
+	
+	@Test
+	public void vegistrationTest(){
+		gcrShopLandingPage.continueToRegistrationPage();
+	}
 
 }
