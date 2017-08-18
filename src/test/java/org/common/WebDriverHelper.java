@@ -12,13 +12,13 @@ import org.testng.annotations.BeforeClass;
 
 public class WebDriverHelper {
 
-	public static WebDriver driver = null;
+	public static WebDriver driver;
+	public static ConfigProperty config;
+
 
 	@BeforeClass
 	public void setUp() throws Exception {
-
-		ConfigProperty config = new ConfigProperty();
-
+		config= new ConfigProperty();
 		if (config.getBrowser().equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		} 
@@ -40,7 +40,6 @@ public class WebDriverHelper {
 			System.out.println("Please Provide a valid browser Name "+config.getBrowser()+" Is not a valid Browser Name");
 		}
 
-		driver.get(config.getBaseUrl());
 		driver.manage().timeouts().implicitlyWait(config.getWaitTime(), TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

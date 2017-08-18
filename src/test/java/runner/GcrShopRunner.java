@@ -46,8 +46,8 @@ public class GcrShopRunner extends Utility{
 	myAccountpage.EditMyAccount();
 	myAccountMainpage.changeMyAccountAndInformation();
 	}
+	@Test
+	public void vegistrationTest(){
+		gcrShopLandingPage.continueToRegistrationPage();
 	}
-	
-	
-	
-
+}
