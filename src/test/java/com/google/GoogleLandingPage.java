@@ -9,7 +9,7 @@ public class GoogleLandingPage extends Utility{
 
 public void searchForKeyword() {
 	explicitWait(driver.findElement(searchInputBox));
-	  typeInto(searchInputBox, "Caroline");
+	typeInto(searchInputBox, "Caroline");
 }
 
 public void clickGmailLinkText(){

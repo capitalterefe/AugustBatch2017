@@ -35,7 +35,6 @@ public class Utility extends WebDriverHelper {
 	public void uploadDoc(By locator, String filePath) {
 		WebElement myElement = driver.findElement(locator);
 		myElement.sendKeys(filePath);
-		config.getBaseUrl();
 	}
 
 	public void selectDropDownByVisibleTxt(By locator, String visibleText) {
