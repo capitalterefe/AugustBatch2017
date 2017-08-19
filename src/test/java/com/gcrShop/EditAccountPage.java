@@ -3,7 +3,7 @@ package com.gcrShop;
 import org.common.Utility;
 import org.openqa.selenium.By;
 
-public class MyAccountpage extends Utility{
+public class EditAccountPage extends Utility{
 	By gender= By.xpath("//input[@name='gender'][1]");
 	By firstName= By.xpath("//input[@name='firstname']");
 	By lastName= By.xpath("//input[@name='lastname']");

@@ -19,7 +19,6 @@ public class GcrShopLandingPage extends Utility {
 	}
 
 	public void continueToRegistrationPage() {
-		driver.get(config.getBaseUrl());
 		clickOn(continueButton);
 	}
 
