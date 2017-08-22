@@ -124,4 +124,13 @@ public class Utility extends WebDriverHelper {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	public void switchToFrame(By locator){
+		WebElement frameElement=driver.findElement(locator);
+		driver.switchTo().frame(frameElement);
+	}
+	
+	
+	
 }
